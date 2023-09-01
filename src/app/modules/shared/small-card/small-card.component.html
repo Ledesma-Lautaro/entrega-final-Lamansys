@@ -1,0 +1,9 @@
+<mat-card>
+    <mat-card-header [routerLink]="'/my-stories/' + story._id ">
+        <p>{{story.name}}</p>
+    </mat-card-header>
+    <app-divider></app-divider>
+    <mat-card-content>
+        <mat-card-subtitle>Points: {{story.points}}</mat-card-subtitle>
+    </mat-card-content>
+</mat-card>

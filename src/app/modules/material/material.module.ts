@@ -17,7 +17,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
 	declarations: [],
@@ -39,7 +39,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
 		MatCheckboxModule,
 		MatProgressSpinnerModule,
 		MatProgressBarModule,
-		MatExpansionModule
+		MatExpansionModule,
+		NgImageSliderModule
+
 		
 	],
 	exports: [
@@ -60,7 +62,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 		MatProgressSpinnerModule,
 		MatProgressBarModule,
 		MatExpansionModule,
-		
+		NgImageSliderModule
 		
 	]
 })

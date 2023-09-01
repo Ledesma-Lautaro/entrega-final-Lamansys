@@ -1,0 +1,40 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 1rem;
+    width: 42rem;
+    color: var(--textColor);
+    justify-content: center;
+
+    @media (max-width: 750px) {
+        width: 90dvw;
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+        background-color: var(--elementBackgroundColor);
+        border-radius: 4px;
+        h1{
+            margin: 0;
+        }
+    }
+
+    app-divider,app-generic-card{
+        width: 100%;
+    }
+    ul{
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    app-proyect-card{
+        width: 100%;
+    }
+    .recent-stories{
+        min-width: 100%;
+    }
+}
