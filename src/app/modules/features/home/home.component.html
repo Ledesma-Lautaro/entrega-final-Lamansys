@@ -1,1 +1,41 @@
-<p>home works!</p>
+
+<div class="home">
+    <div class="title">
+
+        <h1>¡Welcome to Agile Flow!</h1>
+    </div>
+
+    <ng-image-slider #nav
+    [images]="imageObject"
+    [infinite]="true"
+    [autoSlide]="10"
+    [imageSize]="{width: '100%', height: '50%'}"
+    slideImage="1">
+    </ng-image-slider>
+
+    <div class="recent-stories">
+        <p>Recent stories you've worked with</p>
+        <div >
+            <app-divider></app-divider>
+
+            <p  *ngIf="allStories.length == 0 && !errorGetStories">
+                Loading recent stories
+                <app-load-bar></app-load-bar>
+            </p>
+
+            <ul *ngIf="allStories.length != 0">
+                <li *ngFor="let story of stories">
+                    <app-small-card [story]="story"></app-small-card>
+                </li>
+            </ul>
+            
+            <div class="no-stories" >
+                <p *ngIf="cantStoriesIsZero" >There are no stories you have worked with yet</p>
+            </div>
+
+            <app-divider></app-divider>
+        </div>
+
+    </div>
+    
+</div>

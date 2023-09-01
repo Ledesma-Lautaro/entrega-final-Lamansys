@@ -1,5 +1,4 @@
-.mat-mdc-card{
-
+mat-card{
     border-radius: 0.25rem;
     background-color: var(--mediumColor);
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -56,10 +55,15 @@
     .mat-mdc-card-title {
         font-size: 1.5rem;   
         cursor: pointer;
-        overflow-wrap: break-word;
-    word-break:keep-all;
+        
     }
 }
+.mat-mdc-card-title {
+    font-size: 1.2rem;   
+    cursor: pointer;
+ 
+}
+
 mat-divider{
     border-top-width: 0.25rem;
     border-radius: 0.25rem;
@@ -80,14 +84,6 @@ mat-card:hover {
     }
 }
 
-.mat-mdc-card-title {
-    font-size: 1.2rem;   
-    cursor: pointer;
- 
-}
-
-
-
 
 i{
     margin-left: 0.4rem;
@@ -100,10 +96,3 @@ i{
 .mat-mdc-card-subtitle {
     color: rgba(0, 0, 0, 0.54);
 }
-
-.members-container {
-    display: flex;
-    padding-bottom: 0.5rem;
-    gap: 10px; 
-    flex-wrap: wrap;
-  }

@@ -50,6 +50,8 @@ mat-card{
     }
     mat-card-title{    
         font-size: 1.5rem;
+        overflow-wrap: break-word;
+        word-break:keep-all;
     }
     
     mat-card-header{

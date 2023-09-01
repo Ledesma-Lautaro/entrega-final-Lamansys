@@ -1,9 +1,6 @@
 <div>
 
-    <p  *ngIf="user == undefined && !errorGetUser">
-        Loading content
-    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-</p>
+    
 <app-label [text]="'Error getting user'" *ngIf="errorGetUser"></app-label>
 
 <div *ngIf="user != undefined" class="title">
@@ -11,6 +8,10 @@
 </div>
  
 
+<p class="loader" *ngIf="user == undefined && !errorGetUser">
+    Loading content
+    <app-load-bar></app-load-bar>
+</p>
 
 <mat-accordion  *ngIf="user != undefined">
     <mat-expansion-panel class="expansion">

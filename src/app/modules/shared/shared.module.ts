@@ -20,6 +20,7 @@ import { LoadingDialogComponent } from './loading-dialog/loading-dialog.componen
 import { DialogNotificationComponent } from './dialog-notification/dialog-notification.component';
 import { StoryCardComponent } from './story-card/story-card.component';
 import { LoadBarComponent } from './load-bar/load-bar.component';
+import { SmallCardComponent } from './small-card/small-card.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { LoadBarComponent } from './load-bar/load-bar.component';
     DialogNotificationComponent,
     StoryCardComponent,
     LoadBarComponent,
+    SmallCardComponent,
   ],
   imports: [
     CommonModule,
@@ -58,7 +60,8 @@ import { LoadBarComponent } from './load-bar/load-bar.component';
     ProjectDialogComponent,
     OwnerPComponent,
     StoryCardComponent,
-    LoadBarComponent
+    LoadBarComponent,
+    SmallCardComponent
   ]
 })
 export class SharedModule { }
