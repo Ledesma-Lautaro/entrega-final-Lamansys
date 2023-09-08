@@ -6,15 +6,16 @@
                 <p class="ownerText">
                     Owner: {{getOwner(story.owner)}}
                 </p>
-        </mat-card-header>
-        <mat-card-header *ngIf="type == 'mystories'" >
+    </mat-card-header>
+
+    <mat-card-header *ngIf="type == 'mystories'" >
             <div (click)="redirectStories(story)" class="title">
                 <mat-card-title >{{ story.name}}</mat-card-title>
             </div>
             <p class="ownerText">
                 Owner: {{getOwner(story.owner)}}
             </p>
-        </mat-card-header>
+    </mat-card-header>
     <mat-divider></mat-divider>
 
     <mat-card-content>

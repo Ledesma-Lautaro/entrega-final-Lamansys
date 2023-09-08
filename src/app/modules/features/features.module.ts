@@ -13,11 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MaterialModule } from '../material/material.module';
 import { SharedModule } from '../shared/shared.module';
 import { MyStoriesComponent } from './my-stories/my-stories.component';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-import { StoryFormComponent } from './story-form/story-form.component';
 import { StorieComponent } from './storie/storie.component';
+import { StoryFormComponent } from './story-form/story-form.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 
 @NgModule({
@@ -31,9 +29,9 @@ import { TaskFormComponent } from './task-form/task-form.component';
     HeaderComponent,
     FooterComponent,
     MyStoriesComponent,
-    StoryFormComponent,
     StorieComponent,
-    TaskFormComponent
+    TaskFormComponent,
+    StoryFormComponent
   ],
   imports: [
     CommonModule,
