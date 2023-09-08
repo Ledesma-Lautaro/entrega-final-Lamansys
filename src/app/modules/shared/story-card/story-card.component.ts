@@ -14,7 +14,7 @@ export class StoryCardComponent implements OnInit{
   @Input() story!: Story;
   @Input() epicId!: string;
   @Input() projectId!: string | null;
-  users!: User[];
+  users : User[] = [];
   @Input() type!:string;
   @Output() editOutPut = new EventEmitter();
   @Output() deleteOutPut = new EventEmitter();
@@ -54,7 +54,10 @@ export class StoryCardComponent implements OnInit{
   }
 
   getUsersOfStory(ids: string[]): User[] {
-    return this.users.filter(user => ids.includes(user._id));
+    if(this.users.length > 0){
+      return this.users.filter(user => ids.includes(user._id));
+    }
+    return [];
   }
 
   getOwner(id: string) {
